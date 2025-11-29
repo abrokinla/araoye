@@ -1,0 +1,82 @@
+{
+  "placeholderImages": [
+    {
+      "id": "about-me",
+      "description": "A professional headshot of Araoye Abraham",
+      "imageUrl": "https://res.cloudinary.com/dru9skos8/image/upload/v1760793789/me3_ga0ud4.png",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "web-dev-1",
+      "description": "Interface of a modern fitness application.",
+      "imageUrl": "https://res.cloudinary.com/dru9skos8/image/upload/v1764421046/Screenshot_from_2025-11-29_13-56-34_coedkp.png",
+      "imageHint": "fitness app"
+    },
+    {
+      "id": "web-dev-2",
+      "description": "Dashboard of a warehouse inventory management system.",
+      "imageUrl": "https://res.cloudinary.com/dru9skos8/image/upload/v1764446750/20251129_1335_Efficient_Warehouse_Management_simple_compose_01kb7sn5hdf5f8z9a83p7p42sb_exch1f.png",
+      "imageHint": "warehouse inventory"
+    },
+    {
+      "id": "data-analysis-1",
+      "description": "Visualization of NLP keyword extraction for SEO.",
+      "imageUrl": "https://res.cloudinary.com/dru9skos8/image/upload/v1764421705/20251129_1404_NLP_Product_SEO_simple_compose_01kb7vcbwdewjak5jace9qmqzz_o5ybyu.png",
+      "imageHint": "text analysis"
+    },
+    {
+      "id": "data-analysis-2",
+      "description": "A dashboard showing marketing campaign performance metrics.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXRpbmclMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYwMzU5Mjg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marketing dashboard"
+    },
+    {
+      "id": "data-analysis-3",
+      "description": "Jupyter notebook showing exploratory data analysis charts for a marketing campaign.",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2hhcnRzfGVufDB8fHx8MTc2MDM1OTMyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data charts"
+    },
+    {
+      "id": "data-analysis-4",
+      "description": "A Power BI dashboard for a supermarket.",
+      "imageUrl": "https://images.unsplash.com/photo-1604935934335-5127b35275a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXBlcm1hcmtldCUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjA0MzI3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "supermarket dashboard"
+    },
+    {
+      "id": "data-analysis-5",
+      "description": "An Excel dashboard showing marketing sales data.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleGNlbCUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjA0MzI3NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "excel dashboard"
+    },
+    {
+      "id": "data-analysis-6",
+      "description": "A dashboard visualizing Adidas sales data across the US.",
+      "imageUrl": "https://images.unsplash.com/photo-1608404176472-a4a42426c11d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBzYWxlcyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjA0MzI3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports sales"
+    },
+    {
+      "id": "data-science-1",
+      "description": "A chart showing a credit risk score gauge.",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-959656d802a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVkaXQlMjBzY29yZXxlbnwwfHx8fDE3NjA0MzQ0NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "credit score"
+    },
+    {
+      "id": "data-science-2",
+      "description": "A visualization representing student data and academic performance.",
+      "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwZGF0YXxlbnwwfHx8fDE3NjA0MzQ1MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "student data"
+    },
+    {
+      "id": "data-science-3",
+      "description": "An abstract visualization of a chatbot's neural network.",
+      "imageUrl": "https://images.unsplash.com/photo-1526040652367-ac003a0472fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGF0Ym90JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYwNDMzOTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chatbot abstract"
+    },
+    {
+      "id": "data-science-4",
+      "description": "A visualization of customer clusters in a shopping mall.",
+      "imageUrl": "https://images.unsplash.com/photo-1596496096184-727a4e69818b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXJrZXQlMjBzZWdtZW50YXRpb258ZW58MHx8fHwxNzYwNDMzOTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "market segmentation"
+    }
+  ]
+}
