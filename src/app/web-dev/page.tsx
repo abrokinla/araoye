@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Header } from "@/components/header";
 import { ProjectsSection } from "@/components/projects-section";
 import { ContactSection } from "@/components/contact-section";
@@ -7,6 +8,26 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+export const metadata: Metadata = {
+  title: 'Web Development Projects | Araoye Abraham',
+  description: 'Explore Araoye Abraham\'s full-stack web development projects. From dynamic web applications to robust back-end systems, see examples of modern web technologies in action.',
+  keywords: ['web development', 'full-stack developer', 'React', 'Next.js', 'JavaScript', 'web applications', 'portfolio projects'],
+  openGraph: {
+    title: 'Web Development Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s full-stack web development projects. From dynamic web applications to robust back-end systems.',
+    url: 'https://araoye.pro/web-dev',
+    siteName: 'Araoye Abraham Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Web Development Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s full-stack web development projects.',
+  },
+  alternates: {
+    canonical: 'https://araoye.pro/web-dev',
+  },
+};
 
 function WebDevHero() {
   const aboutImage = PlaceHolderImages.find((p) => p.id === "about-me")!;

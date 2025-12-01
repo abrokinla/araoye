@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Header } from "@/components/header";
 import { ProjectsSection } from "@/components/projects-section";
 import { ContactSection } from "@/components/contact-section";
@@ -7,6 +8,26 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+export const metadata: Metadata = {
+  title: 'Data Analysis Projects | Araoye Abraham',
+  description: 'Explore Araoye Abraham\'s data analysis projects. Transforming raw data into compelling stories and actionable business insights using powerful visualization and analytical tools.',
+  keywords: ['data analysis', 'data analyst', 'business intelligence', 'data visualization', 'Python', 'SQL', 'Tableau', 'Power BI', 'portfolio projects'],
+  openGraph: {
+    title: 'Data Analysis Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s data analysis projects. Transforming raw data into compelling stories and actionable business insights.',
+    url: 'https://araoye.pro/data-analyst',
+    siteName: 'Araoye Abraham Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Data Analysis Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s data analysis projects.',
+  },
+  alternates: {
+    canonical: 'https://araoye.pro/data-analyst',
+  },
+};
 
 function DataAnalystHero() {
   const aboutImage = PlaceHolderImages.find((p) => p.id === "about-me")!;

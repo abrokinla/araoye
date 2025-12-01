@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Header } from "@/components/header";
 import { ProjectsSection } from "@/components/projects-section";
 import { ContactSection } from "@/components/contact-section";
@@ -7,6 +8,26 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+export const metadata: Metadata = {
+  title: 'Data Science & Machine Learning Projects | Araoye Abraham',
+  description: 'Explore Araoye Abraham\'s data science and machine learning projects. Building predictive models and uncovering patterns in complex datasets using Python, scikit-learn, and advanced ML techniques.',
+  keywords: ['data science', 'machine learning', 'artificial intelligence', 'Python', 'scikit-learn', 'predictive modeling', 'neural networks', 'portfolio projects'],
+  openGraph: {
+    title: 'Data Science & Machine Learning Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s data science and machine learning projects. Building predictive models and uncovering patterns in complex datasets.',
+    url: 'https://araoye.pro/data-science',
+    siteName: 'Araoye Abraham Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Data Science & Machine Learning Projects | Araoye Abraham',
+    description: 'Explore Araoye Abraham\'s data science and machine learning projects.',
+  },
+  alternates: {
+    canonical: 'https://araoye.pro/data-science',
+  },
+};
 
 
 function DataScienceHero() {
