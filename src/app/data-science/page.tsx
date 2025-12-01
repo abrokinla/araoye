@@ -86,13 +86,13 @@ function Footer() {
           &copy; {new Date().getFullYear()} Araoye Abraham. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/araoye-abraham/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
+          <a href="https://www.linkedin.com/in/araoye-abraham-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
             <Linkedin className="h-5 w-5" />
           </a>
           <a href="https://github.com/abrokinla" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
             <Github className="h-5 w-5" />
           </a>
-          <a href="mailto:araoye.abraham@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
+          <a href="mailto:abrokinla@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
             <Mail className="h-5 w-5" />
           </a>
         </div>
