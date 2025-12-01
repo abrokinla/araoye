@@ -69,11 +69,11 @@ export function ContactSection() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <Mail className="h-6 w-6 text-primary"/>
-                    <a href="mailto:araoye.abraham@gmail.com" className="hover:underline">araoye.abraham@gmail.com</a>
+                    <a href="mailto:abrokinla@gmail.com" className="hover:underline">abrokinla@gmail.com</a>
                   </div>
                   <div className="flex items-center gap-4">
                     <Linkedin className="h-6 w-6 text-primary"/>
-                    <a href="https://www.linkedin.com/in/araoye-abraham/" target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/araoye-abraham</a>
+                    <a href="https://www.linkedin.com/in/araoye-abraham-dev/" target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/araoye-abraham-dev</a>
                   </div>
                    <div className="flex items-center gap-4">
                     <Github className="h-6 w-6 text-primary"/>
