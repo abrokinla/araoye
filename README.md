@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing web development, data analysis
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-cloudflare-pages-url.pages.dev) *(Update this URL after deployment)*
+[View Live Site](https://araoye.pages.dev)
 
 ## ✨ Features
 
@@ -156,8 +156,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Araoye Abraham**
 - GitHub: [@abrokinla](https://github.com/abrokinla)
-- LinkedIn: [Your LinkedIn Profile]
-- Email: your.email@example.com
+- LinkedIn: www.linkedin.com/in/araoye-abraham-dev
+- Email: abrokinla@example.com
 
 ## 🙏 Acknowledgments
 
