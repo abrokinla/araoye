@@ -34,9 +34,9 @@ function DataScienceHero() {
   const aboutImage = PlaceHolderImages.find((p) => p.id === "about-me")!;
 
   return (
-    <section id="hero-data-science" className="w-full bg-background text-foreground">
+    <section id="hero-data-science" className="relative w-full bg-background text-foreground">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid min-h-[calc(100vh-4rem)] items-center gap-8 lg:grid-cols-2">
+        <div className="grid min-h-screen items-center gap-8 lg:grid-cols-2">
           <div className="order-2 space-y-6 lg:order-1">
             <div className="space-y-4">
               <span className="font-semibold uppercase tracking-wider text-primary">Data Scientist & ML Engineer</span>
