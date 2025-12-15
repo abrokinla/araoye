@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+// Force this route to be static so `next export` / static hosts can export the sitemap
+// without build errors caused by dynamic-route behavior.
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
