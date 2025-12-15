@@ -10,7 +10,10 @@ export const webDevProjects: Project[] = [
     liveUrl: "#",
     sourceUrlFrontend: "https://github.com/abrokinla/vibrafit_frontend.git",
     sourceUrlBackend: "https://github.com/abrokinla/vibrafit.git",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    demoVideos: [
+      { title: "Vibrafit - Full Walkthrough", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { title: "Vibrafit - Features Highlight", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?start=30" },
+    ],
   },
   {
     title: "Warehouse Inventory Management System",
@@ -19,7 +22,9 @@ export const webDevProjects: Project[] = [
     tags: ["Django", "HTML", "CSS", "JavaScript", "Redux", "Celery"],
     liveUrl: "#",
     sourceUrl: "https://github.com/abrokinla/souk-inventory-api.git",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    demoVideos: [
+      { title: "Warehouse System Demo", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+    ]
   }
 ];
 

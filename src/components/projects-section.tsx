@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { ImagePlaceholder } from "@/lib/placeholder-images";
 import { ExternalLink, Github, Video, FileText } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogClose } from "@/components/ui/dialog";
+import { VideoModal } from "@/components/ui/video-modal";
 
 export type Project = {
   title: string;
@@ -19,7 +19,8 @@ export type Project = {
   sourceUrl?: string;
   sourceUrlFrontend?: string;
   sourceUrlBackend?: string;
-  videoUrl?: string;
+  // demoVideos: optional array of videos to show in the modal. Each video has a title and a URL (prefer embed URL like youtube/embed/...)
+  demoVideos?: { title: string; url: string }[];
   insightsUrl?: string;
 };
 
@@ -31,34 +32,14 @@ type ProjectsSectionProps = {
   icon: React.ReactNode;
 };
 
+// Use the reusable VideoModal component which supports multiple demo videos (tabs + focused player)
 function ProjectVideoDialog({ project }: { project: Project }) {
-  if (!project.videoUrl) {
+  if (!project.demoVideos || project.demoVideos.length === 0) {
     return null;
   }
 
   return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="outline" size="sm">
-          <Video className="mr-2 h-4 w-4" /> Watch Demo
-        </Button>
-      </DialogTrigger>
-      <DialogContent className="max-w-3xl p-0">
-        <DialogHeader className="p-4">
-          <DialogTitle>{project.title} - Demo</DialogTitle>
-          <DialogClose />
-        </DialogHeader>
-        <div className="aspect-video">
-          <iframe
-            className="h-full w-full"
-            src={project.videoUrl}
-            title={`${project.title} video player`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </DialogContent>
-    </Dialog>
+    <VideoModal projectTitle={project.title} videos={project.demoVideos} />
   );
 }
 
