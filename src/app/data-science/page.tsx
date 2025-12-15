@@ -49,7 +49,7 @@ function DataScienceHero() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg">
-                <Link href="/projects">View My Work</Link>
+                <Link href="#projects">View My Work</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="#contact">Get in Touch</Link>
@@ -71,7 +71,7 @@ function DataScienceHero() {
         </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <Link href="/projects" aria-label="Go to projects page">
+        <Link href="#projects" aria-label="Scroll to projects section">
           <ArrowDown className="h-8 w-8 animate-bounce text-primary" />
         </Link>
       </div>

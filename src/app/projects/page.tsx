@@ -4,6 +4,8 @@ import { ProjectsSection } from "@/components/projects-section";
 import { ContactSection } from "@/components/contact-section";
 import { webDevProjects, dataScienceProjects, dataAnalysisProjects } from "@/lib/projects-data";
 import { CodeXml, BrainCircuit, ChartPie } from "lucide-react";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export const metadata: Metadata = {
   title: 'Projects | Araoye Abraham',
@@ -12,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 function ProjectsHero() {
+  const aboutImage = PlaceHolderImages.find((p) => p.id === "about-me")!;
+
   return (
     <section id="hero-projects" className="w-full bg-background text-foreground">
       <div className="container mx-auto px-4 md:px-6">
@@ -24,9 +28,22 @@ function ProjectsHero() {
             <p className="max-w-2xl text-lg text-foreground/80 md:text-xl">
               Browse projects across full-stack web development, data science, and data analysis. Click into demos and source links to learn more.
             </p>
+            <div className="mt-6 flex gap-4">
+              <a href="/projects" className="inline-flex items-center rounded-md bg-primary px-4 py-2 text-white hover:opacity-90">View all projects</a>
+            </div>
           </div>
-          <div className="flex items-center justify-center">
-            <div className="h-48 w-48 rounded-full bg-secondary/60" />
+
+          <div className="order-1 flex justify-center lg:order-2">
+            <div className="relative h-[360px] w-[360px] lg:h-[480px] lg:w-[480px]">
+               <div className="absolute inset-0 -m-4 rounded-full bg-secondary"></div>
+               <Image
+                 src={aboutImage.imageUrl}
+                 alt={aboutImage.description}
+                 data-ai-hint={aboutImage.imageHint}
+                 fill
+                 className="relative z-10 rounded-full object-cover shadow-2xl"
+               />
+            </div>
           </div>
         </div>
       </div>
