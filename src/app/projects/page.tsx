@@ -19,7 +19,7 @@ function ProjectsHero() {
   return (
     <section id="hero-projects" className="w-full bg-background text-foreground">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid min-h-[calc(60vh-4rem)] items-center gap-8 lg:grid-cols-2">
+        <div className="grid min-h-[calc(100vh-4rem)] items-center gap-8 lg:grid-cols-2">
           <div className="space-y-4">
             <span className="font-semibold uppercase tracking-wider text-primary">Projects</span>
             <h1 className="font-headline text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl">
