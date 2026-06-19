@@ -35,11 +35,29 @@ export function ContactSection() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you would send this data to a server/backend service
-    console.log(values);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const endpoint = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "https://api.web3forms.com/submit";
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+
+    if (endpoint) {
+      try {
+        const body = accessKey ? { access_key: accessKey, ...values } : values;
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        if (!res.ok) throw new Error("Failed to send");
+      } catch {
+        toast({
+          title: "Something went wrong",
+          description: "Please email me directly at abrokinla@gmail.com",
+          variant: "destructive",
+        });
+        return;
+      }
+    } else {
+      await new Promise(resolve => setTimeout(resolve, 800));
+    }
 
     toast({
       title: "Message Sent!",

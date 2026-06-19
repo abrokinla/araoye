@@ -25,7 +25,48 @@ export const webDevProjects: Project[] = [
     demoVideos: [
       { title: "Warehouse System Demo", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
     ]
-  }
+  },
+  {
+    title: "propManager",
+    description: "A SAAS platform for real estate agents to manage properties, tenants, listings, and client relationships under their care.",
+    image: PlaceHolderImages.find(p => p.id === 'web-dev-3')!,
+    tags: ["Python", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
+    liveUrl: "#",
+    sourceUrlFrontend: "https://github.com/abrokinla/propManager-frontend.git",
+    sourceUrlBackend: "https://github.com/abrokinla/propManager.git",
+  },
+  {
+    title: "resulthub",
+    description: "A school result management system for managing student records, grades, reports, and academic performance tracking.",
+    image: PlaceHolderImages.find(p => p.id === 'web-dev-4')!,
+    tags: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind CSS"],
+    liveUrl: "#",
+    sourceUrl: "https://github.com/abrokinla/resulthub.git",
+  },
+  {
+    title: "ArtiSANs",
+    description: "A Nigeria-focused artisan marketplace connecting skilled local workers with clients, currently in beta for Lagos launch.",
+    image: PlaceHolderImages.find(p => p.id === 'web-dev-5')!,
+    tags: ["TypeScript", "Next.js", "Tailwind CSS", "Cloudflare"],
+    liveUrl: "#",
+    sourceUrlFrontend: "https://github.com/abrokinla/ArtiSANs-frontend.git",
+  },
+  {
+    title: "sabido",
+    description: "A comprehensive platform to help users upskill, connect with career opportunities, and achieve professional stability.",
+    image: PlaceHolderImages.find(p => p.id === 'web-dev-6')!,
+    tags: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind CSS"],
+    liveUrl: "#",
+    sourceUrl: "https://github.com/abrokinla/sabido.git",
+  },
+  {
+    title: "auto_job_search",
+    description: "An automated job board scraper built with FastAPI that scrapes listings from multiple job boards and sends tailored results via email.",
+    image: PlaceHolderImages.find(p => p.id === 'web-dev-7')!,
+    tags: ["Python", "FastAPI", "Web Scraping", "Automation", "Email"],
+    liveUrl: "#",
+    sourceUrl: "https://github.com/abrokinla/auto_job_search.git",
+  },
 ];
 
 export const dataAnalysisProjects: Project[] = [

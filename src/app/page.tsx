@@ -2,6 +2,9 @@ import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
+import { TechStackSection } from "@/components/tech-stack-section";
+import { Footer } from "@/components/footer";
+import { SectionDivider } from "@/components/section-divider";
 import { CodeXml, BarChart3, BrainCircuit, Linkedin, Github, Mail, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Link from "next/link";
@@ -36,6 +39,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
+        <SectionDivider />
         <section id="roles" className="w-full bg-secondary/50 py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="mx-auto mb-12 max-w-2xl text-center">
@@ -44,18 +48,18 @@ export default function Home() {
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {roles.map((role) => (
-                <Card key={role.title} className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <Card key={role.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <CardHeader>
-                    <div className="mb-4 flex justify-center">{role.icon}</div>
+                    <div className="mb-4 flex justify-center transition-transform duration-300 group-hover:scale-110">{role.icon}</div>
                     <CardTitle className="text-center font-headline text-2xl">{role.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-1">
                     <CardDescription className="text-center text-base">{role.description}</CardDescription>
                   </CardContent>
                   <div className="p-6 pt-0">
-                    <Button asChild className="w-full">
+                    <Button asChild className="w-full group">
                       <Link href={role.href}>
-                        View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                        View Projects <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </Button>
                   </div>
@@ -64,32 +68,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <SectionDivider />
+        <TechStackSection />
+        <SectionDivider />
         <ContactSection />
       </main>
       <Footer />
     </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="bg-secondary text-secondary-foreground">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row md:px-6">
-        <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Araoye Abraham. All rights reserved.
-        </p>
-        <div className="flex items-center gap-4">
-          <a href="https://www.linkedin.com/in/araoye-abraham/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-primary transition-colors">
-            <Linkedin className="h-5 w-5" />
-          </a>
-          <a href="https://github.com/abrokinla" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-primary transition-colors">
-            <Github className="h-5 w-5" />
-          </a>
-          <a href="mailto:araoye.abraham@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
-            <Mail className="h-5 w-5" />
-          </a>
-        </div>
-      </div>
-    </footer>
   );
 }
