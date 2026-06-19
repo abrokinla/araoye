@@ -7,12 +7,11 @@ export const webDevProjects: Project[] = [
     description: "A fitness application for personalized workout plans, progress tracking, and connecting with trainers.",
     image: PlaceHolderImages.find(p => p.id === 'web-dev-1')!,
     tags: ["Next.js", "Django", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "#",
+    liveUrl: "https://vibrafitapp.pages.dev/en",
     sourceUrlFrontend: "https://github.com/abrokinla/vibrafit_frontend.git",
     sourceUrlBackend: "https://github.com/abrokinla/vibrafit.git",
     demoVideos: [
-      { title: "Vibrafit - Full Walkthrough", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { title: "Vibrafit - Features Highlight", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?start=30" },
+      { title: "Trainer Onboarding & Setting Preset Training", url: "https://share.vidyard.com/watch/Yjydya6dK6Xapk8smZajoL" },
     ],
   },
   {
@@ -31,7 +30,7 @@ export const webDevProjects: Project[] = [
     description: "A SAAS platform for real estate agents to manage properties, tenants, listings, and client relationships under their care.",
     image: PlaceHolderImages.find(p => p.id === 'web-dev-3')!,
     tags: ["Python", "TypeScript", "React", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "#",
+    liveUrl: "https://propmanager.abrokinla.workers.dev/",
     sourceUrlFrontend: "https://github.com/abrokinla/propManager-frontend.git",
     sourceUrlBackend: "https://github.com/abrokinla/propManager.git",
   },
@@ -40,7 +39,7 @@ export const webDevProjects: Project[] = [
     description: "A school result management system for managing student records, grades, reports, and academic performance tracking.",
     image: PlaceHolderImages.find(p => p.id === 'web-dev-4')!,
     tags: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "#",
+    liveUrl: "https://resulthub.abrokinla.workers.dev/",
     sourceUrl: "https://github.com/abrokinla/resulthub.git",
   },
   {
